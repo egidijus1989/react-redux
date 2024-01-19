@@ -1,7 +1,7 @@
 import { Card, ListGroupItem, Button, CardBody } from "react-bootstrap"
 import { UncontrolledCollapse } from "reactstrap"
 
-const TotdoItem = ({todo, remove, mark}) => {
+const ToDoItem = ({todo, remove, mark}) => {
     return(
         <ListGroupItem>
             <div className="row">
@@ -25,4 +25,4 @@ const TotdoItem = ({todo, remove, mark}) => {
         </ListGroupItem>
     )
 }
-export default TotdoItem
+export default ToDoItem

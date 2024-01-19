@@ -1,4 +1,4 @@
-import TotdoItem from "./TodoItem"
+import TodoItem from "./TodoItem"
 import { connect } from "react-redux"
 import { markDone, deleteTodo } from "../../store/actions/TodoActions"
 import filterTodos from "../../utilities/filterTodo"
@@ -12,7 +12,7 @@ const TodoList = (props) => {
     return(
         <ListGroup>
             {filterTodosList.map(todo=>
-                <TotdoItem todo={todo} key={todo.id} mark={markDone} remove={{deleteTodo}}/>
+                <TodoItem todo={todo} key={todo.id} mark={markDone} remove={deleteTodo}/>
             )}
         </ListGroup>
     )
