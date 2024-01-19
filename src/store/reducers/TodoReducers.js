@@ -22,7 +22,6 @@ const removeTodo = (todos, id) => {
 }
 
 const Todos = (state = init, action) =>{
-    console.log(state.todos)
     switch(action.type){
         case ADD_TODO:{
             let todos = [...state.todos];

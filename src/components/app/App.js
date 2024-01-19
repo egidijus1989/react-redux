@@ -1,5 +1,6 @@
 import Nav from "../nav/nav";
 import TodoList from "../todo/TodoList";
+import AddTodo from "../todo/AddTodo";
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <div className="row">
         <div className="col-md-7 m-auto">
           <Nav/>
+          <AddTodo/>
           <TodoList/>
         </div>
       </div>
